@@ -17,7 +17,7 @@
   <link href= "{% static 'css/mdb.min.css' %}" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="{% static 'css/style.min.css' %}" rel="stylesheet">
-  <style type="text/css">
+  <style type="{% static 'text/css' %}">
     html,
     body,
     header,
@@ -71,20 +71,12 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link waves-effect" href= "{%static '#' %}">Home
+            <a class="nav-link waves-effect" href= '#'>Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect" href="{%static 'https://mdbootstrap.com/docs/jquery/' %}" target="_blank">About MDB</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="{%static 'https://mdbootstrap.com/docs/jquery/getting-started/download/%'}"
-              target="_blank">Free download</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="{%static 'https://mdbootstrap.com/education/bootstrap/'%}"target="_blank">Free
-              tutorials</a>
+            <a class="nav-link waves-effect" href= 'https://mdbootstrap.com/docs/jquery/' target="_blank">About MasoodZon</a>
           </li>
         </ul>
 
@@ -98,12 +90,12 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
+            <a href="{%static 'https://www.facebook.com/mdbootstrap'%}" class="nav-link waves-effect" target="_blank">
               <i class="fab fa-facebook-f"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
+            <a href= "{%static 'https://twitter.com/MDBootstrap'%}" class="nav-link waves-effect" target="_blank">
               <i class="fab fa-twitter"></i>
             </a>
           </li>
@@ -137,7 +129,7 @@
 
       <!--First slide-->
       <div class="carousel-item active">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%282%29.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="view" style="background-image: url('https://blogs.lse.ac.uk/lsereviewofbooks/files/2016/02/Books-for-Survey.jpg'); background-repeat: no-repeat; background-size: cover;">
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
@@ -153,9 +145,7 @@
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                  written versions
-                  available. Create your own, stunning website.</strong>
+                <strong> The prices are so good its bassically free</strong>
               </p>
 
              
@@ -179,23 +169,17 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
+                <strong> Amazon's Prices are GARABAGE </strong>
               </h1>
 
               <p>
-                <strong>Best & free guide of responsive web design</strong>
+                <strong>We are a small local buisness</strong>
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                  written versions
-                  available. Create your own, stunning website.</strong>
+                <strong>Thanks for Visiting!.</strong>
               </p>
 
-              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
-              </a>
             </div>
             <!-- Content -->
 
@@ -216,23 +200,16 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
+                <strong>MasoodZon the Best Prices</strong>
               </h1>
 
               <p>
-                <strong>Best & free guide of responsive web design</strong>
+                <strong></strong>
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                  written versions
-                  available. Create your own, stunning website.</strong>
+                <strong>Thanks for coming by!.</strong>
               </p>
-
-              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
-              </a>
             </div>
             <!-- Content -->
 
@@ -247,11 +224,11 @@
     <!--/.Slides-->
 
     <!--Controls-->
-    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="{%static '#carousel-example-1z'%}" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+    <a class="carousel-control-next" href="{%static '#carousel-example-1z'%}" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
@@ -282,18 +259,24 @@
           <!-- Links -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">All
+              <a class="nav-link" href="{%static '#' %}" >All
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shirts</a>
+              <a class="nav-link" href="{%static '#' %}" >Fantasy</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sport wears</a>
+              <a class="nav-link" href="{%static '#' %}" >Biographies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Outwears</a>
+              <a class="nav-link" href="{%static '#' %}" >Sci-fi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{%static '#' %}" >Horror</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{%static '#' %}" >Romance</a>
             </li>
 
           </ul>
@@ -324,7 +307,7 @@
 
               <!--Card image-->
               <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                <img src="https://wordery.com/jackets/0c0562f3/harry-potter-and-the-prisoner-of-azkaban-j-k-rowling-9781408855676.jpg" class="card-img-top"
                   alt="">
                 <a>
                   <div class="mask rgba-white-slight"></div>
@@ -336,18 +319,20 @@
               <div class="card-body text-center">
                 <!--Category & Title-->
                 <a href="" class="grey-text">
-                  <h5>Shirt</h5>
+                  <h5>Fantasy</h5>
                 </a>
                 <h5>
                   <strong>
-                    <a href="" class="dark-grey-text">Denim shirt
+                    <a href="" class="dark-grey-text">Harry Potter and the Prisoner of Azkaban
                       <span class="badge badge-pill danger-color">NEW</span>
                     </a>
                   </strong>
                 </h5>
-
+                <h6>
+                  J.K Rowling
+                </h6>
                 <h4 class="font-weight-bold blue-text">
-                  <strong>120$</strong>
+                  <strong>30$</strong>
                 </h4>
 
               </div>
@@ -367,7 +352,7 @@
 
               <!--Card image-->
               <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg" class="card-img-top"
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81VStYnDGrL.jpg" class="card-img-top"
                   alt="">
                 <a>
                   <div class="mask rgba-white-slight"></div>
@@ -379,16 +364,18 @@
               <div class="card-body text-center">
                 <!--Category & Title-->
                 <a href="" class="grey-text">
-                  <h5>Sport wear</h5>
+                  <h5>Biography</h5>
                 </a>
                 <h5>
                   <strong>
-                    <a href="" class="dark-grey-text">Sweatshirt</a>
+                    <a href="" class="dark-grey-text">Steve Jobs</a>
                   </strong>
                 </h5>
-
+                <h6>
+                    Walter Isaacson
+                  </h6>
                 <h4 class="font-weight-bold blue-text">
-                  <strong>139$</strong>
+                  <strong>$40</strong>
                 </h4>
 
               </div>
@@ -420,7 +407,7 @@
               <div class="card-body text-center">
                 <!--Category & Title-->
                 <a href="" class="grey-text">
-                  <h5>Sport wear</h5>
+                  <h5>Sci-fi</h5>
                 </a>
                 <h5>
                   <strong>
@@ -728,7 +715,7 @@
 
     <!-- Social icons -->
     <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+      <a href="{% static 'https://www.facebook.com/mdbootstrap' %}" target="_blank">
         <i class="fab fa-facebook-f mr-3"></i>
       </a>
 
@@ -774,13 +761,13 @@
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="{%static 'js/jquery-3.4.1.min.js' %}"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="{%static 'js/popper.min.js' %}"></script>
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="{%static 'js/bootstrap.min.js' %}"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="{%static 'js/mdb.min.js' %}"></script>
   <!-- Initializations -->
   <script type="text/javascript">
     // Animations initialization
