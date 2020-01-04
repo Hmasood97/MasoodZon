@@ -62,7 +62,7 @@ def home(request):
     lord_Rings.image = "https://images-na.ssl-images-amazon.com/images/I/51tW-UJVfHL._SX321_BO1,204,203,200_.jpg"
     lord_Rings.price = "$15"
     
-    books = [harry_Potter, steve_jobs, hyperion, hill_House, fahrenheit, breath_Air, lord_Rings ]
+    books = [harry_Potter, steve_jobs, hyperion, hill_House, pride_Prejudice, fahrenheit, breath_Air, lord_Rings ]
     
 
     return render(request, 'home-page.html', {'books': books})
