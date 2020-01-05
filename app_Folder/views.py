@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from . models import Book
+from django.views.generic import ListView, DetailView
+from . models import Book, Order, OrderBook
 # Create your views here.
 
 def home(request):
@@ -16,7 +17,7 @@ def home(request):
     steve_jobs = Book()
     steve_jobs.title = "Steve Jobs"
     steve_jobs.author = "Walter Isaacson"
-    steve_jobs.genre = "Biography"
+    steve_jobs.genre = "Biographies"
     steve_jobs.image = "https://images-na.ssl-images-amazon.com/images/I/81VStYnDGrL.jpg"
     steve_jobs.price = "$40"
 
@@ -51,7 +52,7 @@ def home(request):
     breath_Air = Book()
     breath_Air.title = "When Breath Becomes Air"
     breath_Air.author = "Paul Kalanithi"
-    breath_Air.genre = "Biography"
+    breath_Air.genre = "Biographies"
     breath_Air.image = "https://images-na.ssl-images-amazon.com/images/I/717KRq4xxxL.jpg"
     breath_Air.price = "$15"
     
@@ -66,3 +67,12 @@ def home(request):
     
 
     return render(request, 'home-page.html', {'books': books})
+
+
+    def checkout(request):
+        return render(request, "checkout.html")
+
+
+class bookDetailView(DetailView):
+    model = Book
+    template_name = "product-page.html"
