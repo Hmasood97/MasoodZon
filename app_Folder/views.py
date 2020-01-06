@@ -69,8 +69,8 @@ def home(request):
     return render(request, 'home-page.html', {'books': books})
 
 
-    def checkout(request):
-        return render(request, "checkout.html")
+def checkout(request):
+    return render(request, 'checkout-page.html')
 
 
 class bookDetailView(DetailView):
