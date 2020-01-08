@@ -19,7 +19,7 @@
     header,
     .carousel {
       height: 60vh;
-    }
+    } 
 
     @media (max-width: 740px) {
 
@@ -67,12 +67,12 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link waves-effect" href= '#'>Home
+            <a class="nav-link waves-effect" href= "">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect" href='checkout.html' target="_blank">Checkout</a>
+            <a class="nav-link waves-effect" href='checkout' target="_blank">Checkout</a>
           </li>
         </ul>
 
@@ -83,16 +83,6 @@
               <span class="badge red z-depth-1 mr-1"> 1 </span>
               <i class="fas fa-shopping-cart"></i>
               <span class="clearfix d-none d-sm-inline-block"> Cart </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href= "https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href= "{% static 'https://twitter.com/MDBootstrap' %}" class="nav-link waves-effect" target="_blank">
-              <i class="fab fa-twitter"></i>
             </a>
           </li>
           <li class="nav-item">
@@ -220,11 +210,11 @@
     <!--/.Slides-->
 
     <!--Controls-->
-    <a class="carousel-control-prev" href="{% static '#carousel-example-1z' %}" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href= "#carousel-example-1z" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="{% static '#carousel-example-1z' %}" role="button" data-slide="next">
+    <a class="carousel-control-next" href= "#carousel-example-1z" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
@@ -390,44 +380,6 @@
     </div>
   </main>
   <!--Main layout-->
-
-  <!--Footer-->
-  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
-    <!--Call to action-->
-    <div class="pt-4">
-      <a class="btn btn-outline-white" href= "{% static 'https://mdbootstrap.com/docs/jquery/getting-started/download/' %}" target="_blank"
-        role="button">Download MDB
-        <i class="fas fa-download ml-2"></i>
-      </a>
-      <a class="btn btn-outline-white" href= "{% static 'https://mdbootstrap.com/education/bootstrap/' %}" target="_blank" role="button">Start
-        free tutorial
-        <i class="fas fa-graduation-cap ml-2"></i>
-      </a>
-    </div>
-    <!--/.Call to action-->
-
-    <hr class="my-4">
-
-    <!-- Social icons -->
-    <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-        <i class="fab fa-facebook-f mr-3"></i>
-      </a>
-
-      <a href= "https://twitter.com/MDBootstrap" target="_blank">
-        <i class="fab fa-twitter mr-3"></i>
-      </a>
-
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-        <i class="fab fa-github mr-3"></i>
-      </a>
-
-      <a href="http://codepen.io/mdbootstrap/" target="_blank">
-        <i class="fab fa-codepen mr-3"></i>
-      </a>
-    </div>
-    <!-- Social icons -->
 
     <!--Copyright-->
     <div class="footer-copyright py-3">
